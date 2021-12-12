@@ -151,6 +151,10 @@ function clear(e){
     for (var i = 0;  i < inputsAll.length; i++) {
         inputsAll[i].value = '';
     };
+    if(e==='.length'){
+        document.getElementById('label-fuel').innerHTML = 'л/* км';
+        document.getElementById('label-cost').innerHTML = 'грн/* км';
+    }
     document.querySelector(e + '-calc').setAttribute("disabled", "disabled");
 }
     
